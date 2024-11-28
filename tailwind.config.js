@@ -3,6 +3,12 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+        "h-xs": { raw: "(max-height: 480px)" },
+        "h-sm": { raw: "(max-height: 640px)" },
+        "h-md": { raw: "(max-height: 768px)" },
+      },
       fontFamily: {
         Jakarta: ["Jakarta", "sans-serif"],
         JakartaBold: ["Jakarta-Bold", "sans-serif"],
