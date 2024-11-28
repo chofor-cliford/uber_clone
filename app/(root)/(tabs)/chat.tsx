@@ -1,12 +1,13 @@
+/* eslint-disable prettier/prettier */
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Home = () => {
+const Chat = () => {
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <Text>Chat</Text>
     </SafeAreaView>
   );
 };
 
-export default Home;
+export default Chat;

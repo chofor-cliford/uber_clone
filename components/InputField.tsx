@@ -2,15 +2,17 @@
 import { InputFieldProps } from "@/types/type";
 import {
   Image,
+  Keyboard,
   KeyboardAvoidingView,
   Platform,
   Text,
   View,
 } from "react-native";
 import {
-  TextInput,
+  // TextInput,
   TouchableWithoutFeedback,
 } from "react-native-gesture-handler";
+import { TextInput } from "react-native";
 
 const InputField = ({
   label,
@@ -27,7 +29,7 @@ const InputField = ({
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View className="my-2 w-full">
           <Text className={`text-lg font-JakartaSemiBold mb-3 ${lableStyle}`}>
             {label}

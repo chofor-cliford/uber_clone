@@ -1,12 +1,14 @@
+/* eslint-disable prettier/prettier */
+
 import { Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Chat = () => {
+const Rides = () => {
   return (
     <SafeAreaView>
-      <Text>Chat</Text>
+      <Text>Rides</Text>
     </SafeAreaView>
   );
 };
 
-export default Chat;
+export default Rides;
